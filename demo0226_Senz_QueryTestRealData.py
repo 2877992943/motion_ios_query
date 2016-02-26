@@ -6,7 +6,7 @@
 c_list=['running','walking','riding','sitting','driving']
 
 
-dataPath='../output'
+dataPath='../output/'
 test_pack=11020#01234  #012 not sure walk   |mod<15 rid  | mod>=15 walkrun|but differ between people
 para_pack=0#1with liangbin riding into trainset 
 import numpy as np
