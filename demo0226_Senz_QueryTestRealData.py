@@ -1,18 +1,12 @@
 #!/usr/bin/env python
 # encoding=utf-8
 
-"""
-log.tracer database
-choose riding data ,sort,fea11,visual ,choose valid data
-generate fea [50,11]
-test with wb_para
-
-
-"""
+ 
 
 c_list=['running','walking','riding','sitting','driving']
 
-dataPath='/home/yr/ios_motion/tmpData0110/' 
+
+dataPath='../output'
 test_pack=11020#01234  #012 not sure walk   |mod<15 rid  | mod>=15 walkrun|but differ between people
 para_pack=0#1with liangbin riding into trainset 
 import numpy as np
@@ -32,7 +26,7 @@ inst_id='CkbmpnYPiuWoYeVNEPsjBTW7F7mnJEM9'
 
 year_=2016
 month=2;day_nov=26;
-nov=[[month,day_nov,0,0,month,day_nov,23,0]]  #js 1.15-0-24  better than ios
+nov=[[month,day_nov,0,0,month,day_nov,23,0]]   
 
  
 ##########query log.tracer
