@@ -553,13 +553,13 @@ if __name__=="__main__":
 	timestampList.sort()
 	print len(timestampList)
 	save2pickle([data_dic1,loc_list,timestampList,timestampLocList],'raw-xyz')
-	save2pickle(data_dic1['acc'],'xyz-acc-0201')
+	save2pickle(data_dic1['acc'],'xyz-acc-0201')#[n,3]array
 	   
 	   
 
  	    
 	######################3
-	#clean data:match [ acc_time ,location_time] locationTime less
+	#timestamp , acc
 	########################
 	data_dic1,loc_list,timestampList,timestampLocList=load_pickle(dataPath+'raw-xyz');
 	print 'acc time',data_dic1['acc'].shape,len(timestampList)
@@ -580,7 +580,7 @@ if __name__=="__main__":
 
 	 
 	###############
-	# mod  acc mag gyro
+	# mod  acc  
 	##################
 	
 	xyz_acc=data_dic1['acc']
